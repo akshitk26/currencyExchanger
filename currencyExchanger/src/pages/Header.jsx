@@ -4,7 +4,7 @@ function Header() {
   return (
     <div className={styles.header}>
       <h1>Currency Converter</h1>
-      <h2>Github: </h2>
+      <h2>Github: akshitk26</h2>
     </div>
   );
 }

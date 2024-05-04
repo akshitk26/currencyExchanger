@@ -1,11 +1,17 @@
 import styles from "./dropdown.module.css";
 
-export default function Dropdown() {
+export const currencies = [
+  { name: "dollars", convRate: 1 },
+  { name: "rupees", convRate: 83.38 },
+  { name: "pesos", convRate: 16.97 },
+];
+
+export default function Dropdown({ onChange }) {
   return (
-    <select className={styles.dropdown}>
-      <option value="dollars">dollars</option>
-      <option value="rupees">rupees</option>
-      <option value="pesos">pesos</option>
+    <select className={styles.dropdown} onChange={onChange}>
+      {currencies.map((currency) => (
+        <option>{currency.name}</option>
+      ))}
     </select>
   );
 }
