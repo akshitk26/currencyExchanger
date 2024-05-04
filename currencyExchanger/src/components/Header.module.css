@@ -1,0 +1,20 @@
+.header {
+  box-sizing: border-box;
+  height: 0px;
+  width: 100%;
+  background-color: green;
+  color: black;
+
+  padding: 100px;
+  margin: 0px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header h1 {
+  color: black;
+  font-size: 50px;
+}
