@@ -1,4 +1,5 @@
 import styles from "./content.module.css";
+import Dropdown from "./Dropdown";
 
 export default function Content() {
   return (
@@ -7,33 +8,29 @@ export default function Content() {
         <h1>Your Money</h1>
 
         <div className={styles.contentBox}>
-          <select className={styles.dropdown}>
-            <option value="dollars">dollars</option>
-            <option value="rupees">rupees</option>
-            <option value="pesos">pesos</option>
-          </select>
+          <input
+            type="number"
+            placeholder="Enter amount"
+            className={styles.amountBox}
+          ></input>
 
-          <input type="text" placeholder="Enter amount"></input>
+          <Dropdown />
         </div>
       </div>
 
       <div>
-        <h1> Convert to</h1>
-
-        <div className={styles.buttonBox}>button here :)</div>
+        <div className={styles.buttonBox}>
+          <button> Convert to: </button>
+        </div>
       </div>
 
       <div>
         <h1> Converted money</h1>
 
         <div className={styles.contentBox}>
-          <select className={styles.dropdown}>
-            <option value="dollars">dollars</option>
-            <option value="rupees">rupees</option>
-            <option value="pesos">pesos</option>
-          </select>
-
           <textarea readOnly style={{ resize: "none" }}></textarea>
+
+          <Dropdown />
         </div>
       </div>
     </div>
