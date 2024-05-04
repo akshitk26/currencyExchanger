@@ -1,7 +1,7 @@
 import { useState } from "react";
 
-import Header from "./components/Header";
-import Content from "./components/Content";
+import Header from "./pages/Header";
+import Content from "./pages/Content";
 
 import styles from "./styles.module.css";
 
