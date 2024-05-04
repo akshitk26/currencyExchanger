@@ -1,0 +1,41 @@
+.body {
+  box-sizing: border-box;
+  display: flex;
+  height: calc(100vh - 200px);
+  justify-content: space-around;
+  align-items: center;
+
+  padding: 20px;
+  background-color: white;
+}
+
+.body h1 {
+  text-align: center;
+}
+
+.contentBox {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  height: 500px;
+  background-color: lightGreen;
+  padding: 50px;
+  color: black;
+
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.buttonBox {
+  width: 200px;
+  height: auto;
+  background-color: gray;
+}
+
+.dropdown {
+  border-radius: 20px;
+  font-size: 20px;
+
+  width: 50%;
+}
