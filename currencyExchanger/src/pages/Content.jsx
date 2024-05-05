@@ -10,8 +10,8 @@ export default function Content() {
   const [convertedAmount, setConvertedAmount] = useState(0);
 
   const convert = () => {
-    const inRate = currencies.find((c) => c.name === currency)?.convRate;
-    const outRate = currencies.find((c) => c.name === convMoney)?.convRate;
+    const inRate = currencies.find((c) => c.name === currency).convRate;
+    const outRate = currencies.find((c) => c.name === convMoney).convRate;
 
     setConvertedAmount((amount / inRate) * outRate);
   };
