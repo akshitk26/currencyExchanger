@@ -5,8 +5,8 @@ import { currencies } from "../pages/Dropdown";
 
 export default function Content() {
   const [amount, setAmount] = useState(0);
-  const [currency, setCurrency] = useState("");
-  const [convMoney, setConvMoney] = useState("");
+  const [currency, setCurrency] = useState("dollars");
+  const [convMoney, setConvMoney] = useState("dollars");
   const [convertedAmount, setConvertedAmount] = useState(0);
 
   const convert = () => {
